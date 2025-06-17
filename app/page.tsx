@@ -12,6 +12,9 @@ import { MouseFollower } from "@/components/mouse-follower"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { SectionHeading } from "@/components/section-heading"
 import { GlassmorphicCard } from "@/components/glassmorphic-card"
+import { BrowseCollectionButton } from "@/components/browse-collection-button"
+import { ScheduleViewingButton } from "@/components/schedule-viewing-button"
+import { DownloadResumeButton } from "@/components/download-resume-button"
 
 export default function Portfolio() {
   return (
@@ -46,18 +49,8 @@ export default function Portfolio() {
               Discover our exclusive collection of premium automobiles and high-performance bicycles, crafted for those who demand excellence.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
-                <span className="relative z-10 flex items-center">
-                  Browse Collection <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              </Button>
-              <Button
-                variant="outline"
-                className="border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-500"
-              >
-                Schedule Viewing
-              </Button>
+              <BrowseCollectionButton />
+              <ScheduleViewingButton />
             </div>
             <div className="flex gap-4 pt-4">
               <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
@@ -175,7 +168,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="mt-8">
-                  <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">Download Resume</Button>
+                  <DownloadResumeButton />
                 </div>
               </GlassmorphicCard>
             </div>
@@ -210,11 +203,11 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-32 relative">
+      {/* Featured Vehicles Section */}
+      <section id="collection" className="py-32 relative">
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
         <div className="container relative z-10">
@@ -321,12 +314,12 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-32 relative">
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-          <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="Contact Us" subtitle="Schedule a viewing" />
+          <SectionHeading title="Contact Us" subtitle="Schedule a viewing or get in touch" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
             <GlassmorphicCard>
