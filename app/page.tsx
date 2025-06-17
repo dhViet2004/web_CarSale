@@ -39,7 +39,7 @@ export default function Portfolio() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
               <span className="block">Welcome to</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                Automotive Programming
+                Premium Motors & Cycles
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
@@ -48,7 +48,7 @@ export default function Portfolio() {
             <div className="flex flex-wrap gap-4 pt-4">
               <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
                 <span className="relative z-10 flex items-center">
-                  View Projects <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  Browse Collection <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Button>
@@ -56,7 +56,7 @@ export default function Portfolio() {
                 variant="outline"
                 className="border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-500"
               >
-                Contact Me
+                Schedule Viewing
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
@@ -129,7 +129,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
                 <img
-                  src="/placeholder.svg?height=600&width=600"
+                  src="https://res.cloudinary.com/dofmnufq6/image/upload/v1750094294/R_qqsqzz.jpg"
                   alt="Shine Kyaw Kyaw Aung"
                   className="w-full h-full object-cover"
                 />
@@ -225,49 +225,55 @@ export default function Portfolio() {
               title="Mercedes-Benz S-Class"
               description="The pinnacle of luxury and innovation, featuring cutting-edge technology and unparalleled comfort."
               tags={["Luxury", "Sedan", "Premium", "German"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750094841/mercedes-amg-car-png-image-pngpix-9_sp35pz.png"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
+              type="car"
             />
             <ProjectCard
               title="BMW M Series"
               description="Performance meets luxury in this high-performance sports car lineup."
               tags={["Sports", "Performance", "Luxury", "German"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750095345/abf04066-985e-4c36-9397-27564cd175cb_qiutb8.webp"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
+              type="car"
             />
             <ProjectCard
               title="Audi RS e-tron GT"
               description="Electric performance redefined with stunning design and instant acceleration."
               tags={["Electric", "Performance", "Luxury", "German"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750095466/a923b13d-7db9-4a7d-83ac-a76b2a83c518_sr2s4a.webp"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
+              type="car"
             />
             <ProjectCard
               title="Pinarello Dogma F"
               description="Professional-grade carbon fiber frame with aerodynamic excellence."
               tags={["Road Bike", "Carbon", "Professional", "Italian"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096115/e41fec40ad2578587cb453e2cda34242_wsftfr.png"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
+              type="bike"
             />
             <ProjectCard
               title="Specialized S-Works Tarmac"
               description="The ultimate race machine, engineered for speed and efficiency."
               tags={["Road Bike", "Carbon", "Professional", "American"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096042/94925-03_TARMAC-SW-LTD-TDF-BORA-RED-BULL_HERO-SQUARE_o7m0xi.png"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
+              type="bike"
             />
             <ProjectCard
               title="Factor O2"
               description="British engineering excellence meets cutting-edge cycling technology."
               tags={["Road Bike", "Carbon", "Professional", "British"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096115/e41fec40ad2578587cb453e2cda34242_wsftfr.png"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
+              type="bike"
             />
           </div>
         </div>

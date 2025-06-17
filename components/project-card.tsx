@@ -2,8 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowUpRight, Github } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { motion } from "framer-motion"
+import { FaCar, FaBicycle, FaInfoCircle } from "react-icons/fa"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -15,9 +16,10 @@ interface ProjectCardProps {
   image: string
   demoUrl: string
   repoUrl: string
+  type: "car" | "bike"
 }
 
-export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl }: ProjectCardProps) {
+export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl, type }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
@@ -36,12 +38,12 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl 
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
 
         <div className="relative h-full flex flex-col">
-          <div className="relative overflow-hidden h-48">
+          <div className="relative overflow-hidden h-72">
             <div className="absolute inset-0 bg-gradient-to-b from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
             <img
               src={image || "/placeholder.svg"}
               alt={title}
-              className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? "scale-110" : "scale-100"}`}
+              className={`w-full h-full object-contain transition-transform duration-700 ${isHovered ? "scale-110" : "scale-100"}`}
             />
           </div>
 
@@ -60,8 +62,8 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl 
             <div className="flex justify-between mt-auto pt-4 border-t border-zinc-700/50">
               <Button variant="ghost" size="sm" className="text-zinc-400 hover:text-white hover:bg-zinc-700/50" asChild>
                 <Link href={repoUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
+                  {type === "car" ? <FaCar className="mr-2 h-4 w-4" /> : <FaBicycle className="mr-2 h-4 w-4" />}
+                  Details
                 </Link>
               </Button>
               <Button
@@ -70,7 +72,7 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl 
                 asChild
               >
                 <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
-                  Live Demo
+                  Schedule Test Drive
                   <ArrowUpRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
