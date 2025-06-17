@@ -8,6 +8,8 @@ import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { useMobile } from "@/hooks/use-mobile"
+import { NavLink } from "@/components/nav-link"
+import { BookViewingButton } from "@/components/book-viewing-button"
 
 export function FloatingNav() {
   const [isVisible, setIsVisible] = useState(false)
@@ -41,7 +43,6 @@ export function FloatingNav() {
   const navItems = [
     { name: "Showroom", href: "#showroom" },
     { name: "Expertise", href: "#expertise" },
-    { name: "Inventory", href: "#inventory" },
     { name: "Journey", href: "#journey" },
     { name: "Contact", href: "#contact" },
   ]
@@ -105,21 +106,16 @@ export function FloatingNav() {
                     <span className="text-white">Auto</span>
                   </Link>
                   {navItems.map((item) => (
-                    <Link
+                    <NavLink
                       key={item.name}
                       href={item.href}
                       className="px-3 py-1 text-sm font-medium text-zinc-400 hover:text-white transition-colors"
                       onClick={handleNavClick}
                     >
                       {item.name}
-                    </Link>
+                    </NavLink>
                   ))}
-                  <Button
-                    size="sm"
-                    className="ml-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0"
-                  >
-                    Book Viewing
-                  </Button>
+                  <BookViewingButton />
                 </div>
               )}
             </div>
@@ -137,18 +133,16 @@ export function FloatingNav() {
         >
           <div className="flex flex-col items-center justify-center h-full">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 href={item.href}
                 className="px-8 py-4 text-2xl font-medium text-white hover:text-purple-400 transition-colors"
                 onClick={handleNavClick}
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
-            <Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0">
-              Book Viewing
-            </Button>
+            <BookViewingButton />
           </div>
         </motion.div>
       )}

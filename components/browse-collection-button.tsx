@@ -8,7 +8,7 @@ export function BrowseCollectionButton() {
     <Button 
       className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0"
       onClick={() => {
-        document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('showroom')?.scrollIntoView({ behavior: 'smooth' });
       }}
     >
       <span className="relative z-10 flex items-center">

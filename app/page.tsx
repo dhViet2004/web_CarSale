@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { ArrowRight, Mail, Twitter } from "lucide-react"
+import { FaFacebookF, FaYoutube } from "react-icons/fa"
 
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
@@ -53,24 +54,24 @@ export default function Portfolio() {
               <ScheduleViewingButton />
             </div>
             <div className="flex gap-4 pt-4">
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
                   className="rounded-full bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 hover:text-white"
                 >
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
+                  <FaFacebookF className="h-5 w-5" />
+                  <span className="sr-only">Facebook</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/shinekyawkyawaung/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
                   className="rounded-full bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 hover:text-white"
                 >
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
+                  <FaYoutube className="h-5 w-5" />
+                  <span className="sr-only">YouTube</span>
                 </Button>
               </Link>
               <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
@@ -177,7 +178,7 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-32 relative">
+      <section id="expertise" className="py-32 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -204,7 +205,7 @@ export default function Portfolio() {
       </section>
 
       {/* Featured Vehicles Section */}
-      <section id="collection" className="py-32 relative">
+      <section id="showroom" className="py-32 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -222,6 +223,7 @@ export default function Portfolio() {
               demoUrl="https://example.com"
               repoUrl="https://github.com"
               type="car"
+              productId="mercedes-s-class"
             />
             <ProjectCard
               title="BMW M Series"
@@ -231,6 +233,7 @@ export default function Portfolio() {
               demoUrl="https://example.com"
               repoUrl="https://github.com"
               type="car"
+              productId="bmw-m-series"
             />
             <ProjectCard
               title="Audi RS e-tron GT"
@@ -240,6 +243,7 @@ export default function Portfolio() {
               demoUrl="https://example.com"
               repoUrl="https://github.com"
               type="car"
+              productId="audi-rs-etron-gt"
             />
             <ProjectCard
               title="Pinarello Dogma F"
@@ -249,6 +253,7 @@ export default function Portfolio() {
               demoUrl="https://example.com"
               repoUrl="https://github.com"
               type="bike"
+              productId="pinarello-dogma-f"
             />
             <ProjectCard
               title="Specialized S-Works Tarmac"
@@ -258,6 +263,7 @@ export default function Portfolio() {
               demoUrl="https://example.com"
               repoUrl="https://github.com"
               type="bike"
+              productId="specialized-sworks-tarmac"
             />
             <ProjectCard
               title="Factor O2"
@@ -267,13 +273,14 @@ export default function Portfolio() {
               demoUrl="https://example.com"
               repoUrl="https://github.com"
               type="bike"
+              productId="factor-o2"
             />
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-32 relative">
+      <section id="journey" className="py-32 relative">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/3 right-1/3 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -336,20 +343,20 @@ export default function Portfolio() {
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
-                    <Linkedin className="h-5 w-5 text-purple-400" />
+                    <FaFacebookF className="h-5 w-5 text-purple-400" />
                   </div>
                   <div>
-                    <div className="text-sm text-zinc-500">LinkedIn</div>
-                    <div className="font-medium">linkedin.com/company/automotive-programming</div>
+                    <div className="text-sm text-zinc-500">Facebook</div>
+                    <div className="font-medium">facebook.com/automotiveprogramming</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
-                    <Github className="h-5 w-5 text-purple-400" />
+                    <FaYoutube className="h-5 w-5 text-purple-400" />
                   </div>
                   <div>
-                    <div className="text-sm text-zinc-500">Instagram</div>
-                    <div className="font-medium">@automotiveprogramming</div>
+                    <div className="text-sm text-zinc-500">YouTube</div>
+                    <div className="font-medium">youtube.com/automotiveprogramming</div>
                   </div>
                 </div>
               </div>
@@ -381,24 +388,24 @@ export default function Portfolio() {
             </p>
           </div>
           <div className="flex gap-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
                 className="rounded-full bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 hover:text-white"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <FaFacebookF className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
               </Button>
             </Link>
-            <Link href="https://www.linkedin.com/in/shinekyawkyawaung/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
                 className="rounded-full bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 hover:text-white"
               >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
+                <FaYoutube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
               </Button>
             </Link>
             <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
