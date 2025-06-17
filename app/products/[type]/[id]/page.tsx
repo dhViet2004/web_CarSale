@@ -19,9 +19,27 @@ function ProductContent({ type, id }: { type: string; id: string }) {
   useEffect(() => {
     // Simulate data loading
     const timer = setTimeout(() => {
+      let productTitle = "Product Title";
+      let productDescription = "Detailed product description will be loaded here.";
+      let productImage = "/placeholder.jpg";
+      
+      // Set product details based on productId
+      if (id === "mercedes-s-class") {
+        productTitle = "Mercedes-Benz S-Class";
+        productDescription = "The pinnacle of luxury and innovation, featuring cutting-edge technology and unparalleled comfort.";
+        productImage = "https://res.cloudinary.com/dofmnufq6/image/upload/v1750094962/mercedes-amg-car-png-image-pngpix-9_sp35pz.png";
+      } else if (id === "bmw-m-series") {
+        productTitle = "BMW M Series";
+        productDescription = "Performance meets luxury in this high-performance sports car lineup.";
+      } else if (id === "audi-rs-etron-gt") {
+        productTitle = "Audi RS e-tron GT";
+        productDescription = "Electric performance redefined with stunning design and instant acceleration.";
+      }
+
       setProductData({
-        title: "Product Title",
-        description: "Detailed product description will be loaded here.",
+        title: productTitle,
+        description: productDescription,
+        image: productImage,
         specs: {
           engine: "V8 Twin-Turbo",
           power: "500 HP",
@@ -64,8 +82,8 @@ function ProductContent({ type, id }: { type: string; id: string }) {
         <div className="relative aspect-video rounded-xl overflow-hidden bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl blur opacity-25"></div>
           <img
-            src="/placeholder.jpg"
-            alt="Product"
+            src={productData.image}
+            alt={productData.title}
             className="w-full h-full object-cover"
             loading="eager"
           />
@@ -206,7 +224,7 @@ export default function ProductDetailPage() {
       <div className="container py-12 relative z-10">
         <Button
           variant="ghost"
-          className="mb-8 text-zinc-400 hover:text-white"
+          className="mb-8 text-zinc-400 hover:text-white hover:bg-zinc-800/80 transition-all duration-300"
           onClick={() => router.back()}
         >
           <ArrowLeft className="mr-2 h-4 w-4" />

@@ -88,8 +88,8 @@ export function MouseFollower() {
 
     // Revert to a single trail configuration
     const line = {
-      spring: 0.0005, // Tăng spring để đầu hiệu ứng dính liền với con trỏ chuột
-      friction: 0.995, // Giữ friction cao để hiệu ứng mượt mà như khói
+      spring: 0.001, // Tăng từ 0.0005 lên 0.001 để giảm quán tính
+      friction: 0.98, // Giảm từ 0.995 xuống 0.98 để giảm độ trễ
       mouseVelocity: new Vec3(),
       // mouseOffset: new Vec3(random(-1, 1) * 0.04, random(-1, 1) * 0.04, 0), // Removed mouseOffset to center
       points: [] as Vec3[],

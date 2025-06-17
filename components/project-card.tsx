@@ -57,7 +57,7 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl,
 
               <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
-                  <Badge key={index} variant="secondary" className="bg-zinc-800 text-zinc-300">
+                  <Badge key={index} variant="secondary" className="bg-zinc-800/80 text-pink-300 border border-pink-500/20 hover:bg-zinc-700/80">
                     {tag}
                   </Badge>
                 ))}
