@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation"
 import { GlassmorphicCard } from "@/components/glassmorphic-card"
 import { FloatingNav } from "@/components/floating-nav"
 import { ScrollProgress } from "@/components/scroll-progress"
-import ParticleBackground from "@/components/particle-background"
 import { Suspense, useEffect, useState } from "react"
 
 // Separate component for product content
@@ -429,7 +428,7 @@ export default function ProductDetailPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white overflow-hidden">
       <Suspense fallback={null}>
-        <ParticleBackground />
+        {/* <ParticleBackground /> */}
       </Suspense>
       <ScrollProgress />
       <FloatingNav />

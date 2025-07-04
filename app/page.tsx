@@ -16,10 +16,12 @@ import { GlassmorphicCard } from "@/components/glassmorphic-card"
 import { BrowseCollectionButton } from "@/components/browse-collection-button"
 import { ScheduleViewingButton } from "@/components/schedule-viewing-button"
 import { DownloadResumeButton } from "@/components/download-resume-button"
+import FallingLogosBackground from "@/components/falling-logos-background"
 
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white overflow-hidden">
+      <FallingLogosBackground />
       <MouseFollower />
       <ScrollProgress />
       <FloatingNav />
@@ -36,14 +38,14 @@ export default function Portfolio() {
           <div className="space-y-6">
             <div className="inline-block">
               <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
-                <span className="relative z-10">Premium Automotive & Cycling Experience</span>
-                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 animate-pulse"></span>
+                <span className="relative z-10">47HM's Performance</span>
+                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-cyan-400/20 animate-pulse"></span>
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
               <span className="block">Welcome to</span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                Premium Motors & Cycles
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400">
+                47HM's Performance
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
@@ -97,7 +99,183 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="flex justify-center">
-            <CreativeHero />
+            <div className="flex flex-col items-center gap-8 w-full">
+              {/* Logo with advanced glow and rings */}
+              <div className="relative flex items-center justify-center w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem]">
+                {/* Outer Ring Glow */}
+                <div className="absolute inset-0 rounded-full animate-glow-pulse opacity-30 border border-cyan-400/20"></div>
+                {/* Secondary Outer Ring */}
+                <div className="absolute inset-6 rounded-full border border-blue-400/30 animate-pulse"></div>
+                {/* Background Atmospheric Glow */}
+                <div
+                  className="absolute inset-0 rounded-full opacity-20 blur-3xl animate-pulse"
+                  style={{
+                    background: "radial-gradient(circle, rgba(34,211,238,0.6) 0%, rgba(59,130,246,0.4) 40%, transparent 70%)",
+                  }}
+                ></div>
+                {/* 4 Overlapping Horizontal Circles */}
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <div className="relative flex items-center justify-center">
+                    {/* Circle 1 */}
+                    <div className="absolute left-[-60px] md:left-[-72px] lg:left-[-84px] top-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 z-10">
+                      <div className="absolute inset-0 rounded-full border-2 border-cyan-400/50 animate-pulse"></div>
+                      <div className="absolute inset-1 rounded-full border border-blue-400/70 animate-spin-slow"></div>
+                      <div
+                        className="absolute inset-0 rounded-full opacity-50 blur-lg animate-pulse"
+                        style={{
+                          background:
+                            "radial-gradient(circle, rgba(34,211,238,0.9) 0%, rgba(34,211,238,0.3) 60%, transparent 80%)",
+                        }}
+                      ></div>
+                      <div
+                        className="absolute inset-2 rounded-full opacity-60 blur-sm animate-pulse animation-delay-500"
+                        style={{
+                          background: "radial-gradient(circle, rgba(34,211,238,1) 0%, transparent 70%)",
+                        }}
+                      ></div>
+                    </div>
+                    {/* Circle 2 */}
+                    <div className="absolute left-[-24px] md:left-[-28px] lg:left-[-32px] top-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 z-20">
+                      <div className="absolute inset-0 rounded-full border-2 border-blue-400/50 animate-pulse animation-delay-1000"></div>
+                      <div className="absolute inset-1 rounded-full border border-cyan-400/70 animate-spin-slow animation-delay-1000"></div>
+                      <div
+                        className="absolute inset-0 rounded-full opacity-50 blur-lg animate-pulse animation-delay-1000"
+                        style={{
+                          background:
+                            "radial-gradient(circle, rgba(59,130,246,0.9) 0%, rgba(59,130,246,0.3) 60%, transparent 80%)",
+                        }}
+                      ></div>
+                      <div
+                        className="absolute inset-2 rounded-full opacity-60 blur-sm animate-pulse animation-delay-1500"
+                        style={{
+                          background: "radial-gradient(circle, rgba(59,130,246,1) 0%, transparent 70%)",
+                        }}
+                      ></div>
+                    </div>
+                    {/* Circle 3 */}
+                    <div className="absolute right-[-24px] md:right-[-28px] lg:right-[-32px] top-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 z-30">
+                      <div className="absolute inset-0 rounded-full border-2 border-cyan-400/50 animate-pulse animation-delay-2000"></div>
+                      <div className="absolute inset-1 rounded-full border border-blue-400/70 animate-spin-slow animation-delay-2000"></div>
+                      <div
+                        className="absolute inset-0 rounded-full opacity-50 blur-lg animate-pulse animation-delay-2000"
+                        style={{
+                          background:
+                            "radial-gradient(circle, rgba(34,211,238,0.9) 0%, rgba(34,211,238,0.3) 60%, transparent 80%)",
+                        }}
+                      ></div>
+                      <div
+                        className="absolute inset-2 rounded-full opacity-60 blur-sm animate-pulse animation-delay-2500"
+                        style={{
+                          background: "radial-gradient(circle, rgba(34,211,238,1) 0%, transparent 70%)",
+                        }}
+                      ></div>
+                    </div>
+                    {/* Circle 4 */}
+                    <div className="absolute right-[-60px] md:right-[-72px] lg:right-[-84px] top-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 z-40">
+                      <div className="absolute inset-0 rounded-full border-2 border-blue-400/50 animate-pulse animation-delay-3000"></div>
+                      <div className="absolute inset-1 rounded-full border border-cyan-400/70 animate-spin-slow animation-delay-3000"></div>
+                      <div
+                        className="absolute inset-0 rounded-full opacity-50 blur-lg animate-pulse animation-delay-3000"
+                        style={{
+                          background:
+                            "radial-gradient(circle, rgba(59,130,246,0.9) 0%, rgba(59,130,246,0.3) 60%, transparent 80%)",
+                        }}
+                      ></div>
+                      <div
+                        className="absolute inset-2 rounded-full opacity-60 blur-sm animate-pulse animation-delay-3500"
+                        style={{
+                          background: "radial-gradient(circle, rgba(59,130,246,1) 0%, transparent 70%)",
+                        }}
+                      ></div>
+                    </div>
+                    {/* Connecting Light Flow */}
+                    <div className="absolute inset-0 opacity-40">
+                      <div className="absolute top-1/2 left-[-50px] right-[-50px] md:left-[-60px] md:right-[-60px] lg:left-[-70px] lg:right-[-70px] h-1 bg-gradient-to-r from-cyan-400/60 via-blue-400/80 via-cyan-400/80 to-blue-400/60 animate-pulse transform -translate-y-1/2"></div>
+                      <div className="absolute top-1/2 left-[-40px] md:left-[-48px] lg:left-[-56px] w-2 h-2 bg-cyan-400 rounded-full animate-ping transform -translate-y-1/2"></div>
+                      <div className="absolute top-1/2 left-[-12px] md:left-[-14px] lg:left-[-16px] w-1 h-1 bg-blue-400 rounded-full animate-ping animation-delay-1000 transform -translate-y-1/2"></div>
+                      <div className="absolute top-1/2 right-[-12px] md:right-[-14px] lg:right-[-16px] w-2 h-2 bg-cyan-400 rounded-full animate-ping animation-delay-2000 transform -translate-y-1/2"></div>
+                      <div className="absolute top-1/2 right-[-40px] md:right-[-48px] lg:right-[-56px] w-1 h-1 bg-blue-400 rounded-full animate-ping animation-delay-3000 transform -translate-y-1/2"></div>
+                    </div>
+                  </div>
+                </div>
+                {/* Logo Image */}
+                <img
+                  src="https://res.cloudinary.com/dofmnufq6/image/upload/v1751638690/Untitled_June_29_2025_at_17.39.16_1_ses3ov.png"
+                  alt="47HM Logo"
+                  className="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain z-50"
+                  style={{
+                    filter:
+                      "drop-shadow(0 0 40px rgba(34,211,238,0.8)) drop-shadow(0 0 80px rgba(59,130,246,0.6)) drop-shadow(0 0 120px rgba(34,211,238,0.4))",
+                  }}
+                />
+                {/* Floating Particles around the formation */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-[15%] left-[15%] w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-60"></div>
+                  <div className="absolute top-[85%] left-[25%] w-1 h-1 bg-blue-400 rounded-full animate-ping animation-delay-1000 opacity-40"></div>
+                  <div className="absolute top-[25%] right-[20%] w-1 h-1 bg-cyan-400 rounded-full animate-ping animation-delay-2000 opacity-60"></div>
+                  <div className="absolute top-[75%] right-[15%] w-2 h-2 bg-blue-400 rounded-full animate-ping animation-delay-3000 opacity-40"></div>
+                  <div className="absolute bottom-[15%] left-[50%] w-2 h-2 bg-cyan-400 rounded-full animate-ping animation-delay-4000 opacity-60"></div>
+                  <div className="absolute top-[10%] left-[50%] w-1 h-1 bg-blue-400 rounded-full animate-ping animation-delay-1000 opacity-40"></div>
+                </div>
+              </div>
+              {/* Brand Name with enhanced glow and effects */}
+              <div className="relative flex items-center justify-center mt-8 w-full max-w-2xl">
+                {/* Bright Background Panel for Brand Name */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-200 rounded-3xl opacity-95 blur-sm"></div>
+                <div className="absolute inset-1 bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl opacity-90"></div>
+                {/* Enhanced Glow Effects on Bright Background */}
+                <div
+                  className="absolute inset-0 rounded-2xl blur-2xl opacity-60 pointer-events-none"
+                  style={{
+                    background:
+                      "radial-gradient(circle, rgba(59,130,246,0.8) 0%, rgba(236,72,153,0.6) 60%, rgba(34,211,238,0.4) 100%)",
+                  }}
+                ></div>
+                {/* Secondary Glow Layer */}
+                <div
+                  className="absolute inset-0 rounded-2xl blur-xl opacity-70 pointer-events-none animate-pulse"
+                  style={{
+                    background:
+                      "radial-gradient(circle, rgba(34,211,238,0.6) 0%, rgba(59,130,246,0.4) 50%, rgba(236,72,153,0.3) 80%)",
+                  }}
+                ></div>
+                {/* Brand Name Image with Multiple Effects */}
+                <img
+                  src="https://res.cloudinary.com/dofmnufq6/image/upload/v1751466569/web_brandlogo_z0aegn.png"
+                  alt="47HM Brand Name"
+                  className="relative w-40 md:w-56 lg:w-80 object-contain z-10"
+                  style={{
+                    filter:
+                      "drop-shadow(0 0 8px rgba(0,0,0,0.3)) drop-shadow(0 0 16px rgba(59,130,246,0.4)) drop-shadow(0 0 24px rgba(236,72,153,0.3))",
+                  }}
+                />
+                {/* Additional Glow Layers */}
+                <div
+                  className="absolute inset-4 rounded-xl opacity-50 blur-md animate-pulse animation-delay-1000 pointer-events-none"
+                  style={{
+                    background: "linear-gradient(45deg, rgba(59,130,246,0.5), rgba(236,72,153,0.5), rgba(34,211,238,0.5))",
+                  }}
+                ></div>
+                {/* Energy Flow Lines */}
+                <div className="absolute inset-0 opacity-40 pointer-events-none">
+                  <div className="absolute top-1/4 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyan-500/80 to-transparent animate-pulse rounded-full"></div>
+                  <div className="absolute bottom-1/4 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500/80 to-transparent animate-pulse animation-delay-2000 rounded-full"></div>
+                  <div className="absolute left-1/4 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-pink-500/80 to-transparent animate-pulse animation-delay-1000 rounded-full"></div>
+                  <div className="absolute right-1/4 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-cyan-500/80 to-transparent animate-pulse animation-delay-3000 rounded-full"></div>
+                </div>
+                {/* Shadow Effect for Depth */}
+                <div className="absolute inset-0 bg-black/10 rounded-3xl blur-lg transform translate-y-2 -z-10"></div>
+                {/* Floating Particles around Brand Name */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-[10%] left-[10%] w-1.5 h-1.5 bg-blue-500 rounded-full animate-ping opacity-80"></div>
+                  <div className="absolute top-[20%] right-[15%] w-1 h-1 bg-cyan-500 rounded-full animate-ping animation-delay-1000 opacity-70"></div>
+                  <div className="absolute bottom-[15%] left-[20%] w-1 h-1 bg-pink-500 rounded-full animate-ping animation-delay-2000 opacity-80"></div>
+                  <div className="absolute bottom-[10%] right-[10%] w-1.5 h-1.5 bg-blue-500 rounded-full animate-ping animation-delay-3000 opacity-70"></div>
+                  <div className="absolute top-[50%] left-[5%] w-1 h-1 bg-cyan-500 rounded-full animate-ping animation-delay-1500 opacity-75"></div>
+                  <div className="absolute top-[50%] right-[5%] w-1 h-1 bg-pink-500 rounded-full animate-ping animation-delay-2500 opacity-75"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -380,11 +558,11 @@ export default function Portfolio() {
         <div className="container flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <Link href="/" className="font-bold text-xl">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Automotive</span>
-              <span className="text-white">Programming</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400">47HM's</span>
+              <span className="text-blue-900"> Performance</span>
             </Link>
             <p className="text-sm text-zinc-500 mt-2">
-              © {new Date().getFullYear()} Automotive Programming. All rights reserved.
+              © {new Date().getFullYear()} 47HM's Performance. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
