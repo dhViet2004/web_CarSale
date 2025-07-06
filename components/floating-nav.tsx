@@ -73,15 +73,8 @@ export function FloatingNav() {
               {isMobile ? (
                 <div className="relative flex items-center justify-between">
                   <Link href="/" className="font-bold text-lg flex items-center gap-2">
-                    <Image
-                      src="https://res.cloudinary.com/dofmnufq6/image/upload/v1750091297/f4aee19d-a48c-47c5-bed9-86aa37178f58_q6jkma.jpg"
-                      alt="Luxury Auto Gallery Logo"
-                      width={32}
-                      height={32}
-                      className="rounded-full"
-                    />
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Luxury</span>
-                    <span className="text-white">Auto</span>
+                   
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">47HM's</span>
                   </Link>
                   <Button
                     variant="ghost"
@@ -95,15 +88,8 @@ export function FloatingNav() {
               ) : (
                 <div className="relative flex items-center gap-1">
                   <Link href="/" className="font-bold text-lg mr-4 flex items-center gap-2">
-                    <Image
-                      src="https://res.cloudinary.com/dofmnufq6/image/upload/v1750091297/f4aee19d-a48c-47c5-bed9-86aa37178f58_q6jkma.jpg"
-                      alt="Luxury Auto Gallery Logo"
-                      width={32}
-                      height={32}
-                      className="rounded-full"
-                    />
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Luxury</span>
-                    <span className="text-white">Auto</span>
+                    
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">47HM's</span>
                   </Link>
                   {navItems.map((item) => (
                     <NavLink

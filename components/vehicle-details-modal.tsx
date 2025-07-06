@@ -48,12 +48,7 @@ export function VehicleDetailsModal({
         { label: "Torque", value: "830 Nm" }
       ]
     }
-    return [
-      { label: "Premium engineering", value: type === "car" ? "automotive" : "cycling" },
-      { label: "Technology", value: "State-of-the-art" },
-      { label: "Performance", value: "Exceptional" },
-      { label: "Design", value: "Luxury comfort" }
-    ]
+    return []
   }
 
   return (
@@ -61,14 +56,6 @@ export function VehicleDetailsModal({
       <DialogContent className="sm:max-w-[600px] bg-zinc-900 border-zinc-800">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">{title}</DialogTitle>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-4 top-4 text-zinc-400 hover:text-pink-500"
-            onClick={onClose}
-          >
-            <X className="h-4 w-4" />
-          </Button>
         </DialogHeader>
         <div className="mt-4 space-y-6">
           <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -79,7 +66,70 @@ export function VehicleDetailsModal({
             />
           </div>
           <div className="space-y-4">
-            <p className="text-pink-200">{description}</p>
+            {title === "Mercedes" ? (
+              <ul className="text-pink-200 list-disc list-inside space-y-1">
+                <li>Carplay</li>
+                <li>AMG Supersport Display</li>
+                <li>Diagnostic, remove trouble codes</li>
+                <li>12V battery error</li>
+                <li>Map/Software/Firmware update</li>
+                <li>Calibration/ Anti- protection</li>
+              </ul>
+            ) : title === "BMW" ? (
+              <ul className="text-pink-200 list-disc list-inside space-y-1">
+                <li>Retrofit aftermarket part</li>
+                <li>M competition display</li>
+                <li>Carplay</li>
+                <li>Display function that requires activate from Dealer</li>
+                <li>Error that requires coding</li>
+              </ul>
+            ) : title === "Audi" || title === "Volkswagen" ? (
+              <ul className="text-pink-200 list-disc list-inside space-y-1">
+                <li>Carplay</li>
+                <li>Component protection</li>
+                <li>RS- SuperSport display</li>
+                <li>Option that require Dealer to activate</li>
+                <li>Fault that requires programming</li>
+                <li>Software/Firmware update</li>
+              </ul>
+            ) : title === "Pinarello Dogma F" || title === "Specialized S-Works Tarmac" || title === "Factor O2" ? (
+              <div className="text-pink-200 space-y-3">
+                <div>
+                  <span className="font-semibold">Model & Price:</span>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>Used: 2500 USD</li>
+                    <li>Brand new: 3500 USD</li>
+                  </ul>
+                </div>
+                <div>
+                  <span className="font-semibold">Wheel set:</span>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>DT SWISS</li>
+                    <li>Dura-Ace</li>
+                    <li>Roval</li>
+                    <li>Enve</li>
+                    <li>CarbonWork</li>
+                  </ul>
+                </div>
+                <div>
+                  <span className="font-semibold">Groupset:</span>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>Mechanical: Shimano 105 - 7170 Disk Brake</li>
+                    <li>Electrical: Wheeltop wireless EDS TX groupset</li>
+                  </ul>
+                </div>
+                <div>
+                  <span className="font-semibold">Frame/Brand options:</span>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>Pinarello</li>
+                    <li>S-Works</li>
+                    <li>Factor</li>
+                  </ul>
+                </div>
+              </div>
+            ) : (
+              <p className="text-pink-200">{description}</p>
+            )}
             <div className="flex flex-wrap gap-2">
               {tags.map((tag, index) => (
                 <span
@@ -89,17 +139,6 @@ export function VehicleDetailsModal({
                   {tag}
                 </span>
               ))}
-            </div>
-            <div className="pt-4 border-t border-zinc-800">
-              <h4 className="text-lg font-medium mb-4 text-pink-300">Technical Specifications</h4>
-              <div className="grid grid-cols-2 gap-4">
-                {getSpecifications().map((spec, index) => (
-                  <div key={index} className="space-y-1">
-                    <p className="text-sm text-pink-200/70">{spec.label}</p>
-                    <p className="text-lg font-medium text-pink-300">{spec.value}</p>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

@@ -392,66 +392,74 @@ export default function Portfolio() {
         <div className="container relative z-10">
           <SectionHeading title="Featured Vehicles" subtitle="Our premium collection" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 items-stretch">
             <ProjectCard
-              title="Mercedes-Benz S-Class"
-              description="The pinnacle of luxury and innovation, featuring cutting-edge technology and unparalleled comfort."
-              tags={["Luxury", "Sedan", "Premium", "German"]}
-              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750094841/mercedes-amg-car-png-image-pngpix-9_sp35pz.png"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              title="Mercedes"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1751644584/mercedes-logo-15879_r8pjcg.png"
               type="car"
               productId="mercedes-s-class"
+              demoUrl=""
+              repoUrl=""
             />
             <ProjectCard
-              title="BMW M Series"
-              description="Performance meets luxury in this high-performance sports car lineup."
-              tags={["Sports", "Performance", "Luxury", "German"]}
-              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750095345/abf04066-985e-4c36-9397-27564cd175cb_qiutb8.webp"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              title="BMW"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1751644585/BMW-M-Logo_uz5vh9.png"
               type="car"
               productId="bmw-m-series"
+              demoUrl=""
+              repoUrl=""
             />
             <ProjectCard
-              title="Audi RS e-tron GT"
-              description="Electric performance redefined with stunning design and instant acceleration."
-              tags={["Electric", "Performance", "Luxury", "German"]}
-              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750095466/a923b13d-7db9-4a7d-83ac-a76b2a83c518_sr2s4a.webp"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              title="Audi"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1751644585/6a7566b6e66d3bd5400892c2983cf1ef_cugvl5.png"
               type="car"
               productId="audi-rs-etron-gt"
+              demoUrl=""
+              repoUrl=""
+            />
+            <ProjectCard
+              title="Volkswagen"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1751644585/Volkswagen-Emblem_lmzqvi.png"
+              type="car"
+              productId="volkswagen"
+              demoUrl=""
+              repoUrl=""
             />
             <ProjectCard
               title="Pinarello Dogma F"
-              description="Professional-grade carbon fiber frame with aerodynamic excellence."
-              tags={["Road Bike", "Carbon", "Professional", "Italian"]}
               image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096115/e41fec40ad2578587cb453e2cda34242_wsftfr.png"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
               type="bike"
               productId="pinarello-dogma-f"
+              demoUrl=""
+              repoUrl=""
+              className="h-full"
             />
             <ProjectCard
-              title="Specialized S-Works Tarmac"
-              description="The ultimate race machine, engineered for speed and efficiency."
-              tags={["Road Bike", "Carbon", "Professional", "American"]}
+              title="Specialized S-Works"
               image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096042/94925-03_TARMAC-SW-LTD-TDF-BORA-RED-BULL_HERO-SQUARE_o7m0xi.png"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
               type="bike"
               productId="specialized-sworks-tarmac"
+              demoUrl=""
+              repoUrl=""
+              className="h-full"
             />
             <ProjectCard
               title="Factor O2"
-              description="British engineering excellence meets cutting-edge cycling technology."
-              tags={["Road Bike", "Carbon", "Professional", "British"]}
               image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096115/e41fec40ad2578587cb453e2cda34242_wsftfr.png"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
               type="bike"
               productId="factor-o2"
+              demoUrl=""
+              repoUrl=""
+              className="h-full"
+            />
+            <ProjectCard
+              title="Specialized S-Works"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096042/94925-03_TARMAC-SW-LTD-TDF-BORA-RED-BULL_HERO-SQUARE_o7m0xi.png"
+              type="bike"
+              productId="specialized-sworks-tarmac"
+              demoUrl=""
+              repoUrl=""
+              className="h-full"
             />
           </div>
         </div>
