@@ -92,7 +92,7 @@ export function VehicleDetailsModal({
                 <li>Fault that requires programming</li>
                 <li>Software/Firmware update</li>
               </ul>
-            ) : title === "Pinarello Dogma F" || title === "Specialized S-Works Tarmac" || title === "Factor O2" ? (
+            ) : title === "Pinarello Dogma F" || title === "Specialized S-Works" || title === "Factor" || title === "Trek Madone" ? (
               <div className="text-pink-200 space-y-3">
                 <div>
                   <span className="font-semibold">Model & Price:</span>

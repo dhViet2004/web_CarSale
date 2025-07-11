@@ -318,13 +318,14 @@ export default function Portfolio() {
             <div className="space-y-6">
               <GlassmorphicCard>
                 <p className="text-lg text-zinc-300">
-                  We specialize in curating the finest selection of luxury automobiles and premium bicycles. Our showroom features an exclusive collection of Mercedes, BMW, and Audi/Volkswagen vehicles, alongside elite cycling brands including Pinarello, S-Works, and Factor.
+                  As a family-owned business, we offer a full range of mechanical and electrical services, specializing in programming European vehicles, backed by extensive experience and training.
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  Our commitment to excellence extends beyond just selling vehicles. We provide a comprehensive automotive programming experience, ensuring each client receives personalized attention and expert guidance in their journey to find the perfect ride.
+
+                  In addition, we offer a range of replica road bikes from China—the very best—complete with a warranty period and full servicing. Our top sellers last year were the Pinarello F10 and F12.
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  For cycling enthusiasts, we offer an exclusive range of Replica Bikes, meticulously crafted to meet the highest standards of performance and design.
+                  We do not currently offer online payment, so please contact us via email or phone below.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
@@ -444,17 +445,17 @@ export default function Portfolio() {
               className="h-full"
             />
             <ProjectCard
-              title="Factor O2"
-              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096115/e41fec40ad2578587cb453e2cda34242_wsftfr.png"
+              title="Factor"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1752229778/aHR0cHM6Ly9nZW9tZXRyaWNzLm10Yi1uZXdzLmRlL2ltYWdlcy9iaWtlcy9VcmFPODRSWExFWTdCQjFlcktCQTJjYW5DYzBtcDVyS1VNOGU3Mm51LnBuZw_tlgllx.webp"
               type="bike"
-              productId="factor-o2"
+              productId="factor"
               demoUrl=""
               repoUrl=""
               className="h-full"
             />
             <ProjectCard
-              title="Specialized S-Works"
-              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1750096042/94925-03_TARMAC-SW-LTD-TDF-BORA-RED-BULL_HERO-SQUARE_o7m0xi.png"
+              title="Trek Madone"
+              image="https://res.cloudinary.com/dofmnufq6/image/upload/v1752229779/trek-madone-slr-7-gen-8-iv-770550-4_slgpfe.png"
               type="bike"
               productId="specialized-sworks-tarmac"
               demoUrl=""
